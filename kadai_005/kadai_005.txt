@@ -1,0 +1,63 @@
+PS C:\Users\PC_User> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\PC_User
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/01/11     21:54                git_challenge
+
+
+PS C:\Users\PC_User> cd git_challenge
+PS C:\Users\PC_User\git_challenge> git int
+git: 'int' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+PS C:\Users\PC_User\git_challenge> git init
+Initialized empty Git repository in C:/Users/PC_User/git_challenge/.git/
+PS C:\Users\PC_User\git_challenge> echo "Hello,world!" >> hello_world.txt
+PS C:\Users\PC_User\git_challenge> git add hello_world.txt
+PS C:\Users\PC_User\git_challenge> git commit -m "最初の変更”
+[main (root-commit) 107e072] 最初の変更
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\PC_User\git_challenge> echo "こんにちは、世界" 
+こんにちは、世界
+PS C:\Users\PC_User\git_challenge>
+ *  履歴が復元されました 
+
+PS C:\Users\PC_User> cd git challenge
+Set-Location : 引数 'challenge' を受け入れる位置指定パラメーターが見つかりません。
+発生場所 行:1 文字:1
++ cd git challenge
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location]、ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\PC_User> cd git_challenge 
+PS C:\Users\PC_User\git_challenge> git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config advice.addEmptyPathspec false"
+PS C:\Users\PC_User\git_challenge> git add hello_world.txt
+PS C:\Users\PC_User\git_challenge> git commit -m "２回目のコミット”
+[main 9692a49] ２回目のコミット
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\PC_User\git_challenge> git log
+commit 9692a4963287b49c36461f7af6fd5469b4ab6d6f (HEAD -> main)
+Author: katonnbo <katonbo02rr@gmail.com>
+Date:   Mon Jan 13 10:24:29 2025 +0900
+
+    ２回目のコミット
+
+commit 107e07240f0e2f08eaacb0315fb92778a744d7b5
+Author: katonnbo <katonbo02rr@gmail.com>
+Date:   Sat Jan 11 22:05:45 2025 +0900
+
+    最初の変更
+PS C:\Users\PC_User\git_challenge> git log --oneline
+9692a49 (HEAD -> main) ２回目のコミット
+107e072 最初の変更
+PS C:\Users\PC_User\git_challenge> 
